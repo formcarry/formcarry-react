@@ -1,0 +1,75 @@
+{
+	"name": "@formcarry/react",
+	"version": "1.0.0",
+	"description": "React Hooks library for Formcarry | formcarry.com",
+	"main": "./dist/useForm.js",
+	"types": "./dist/useForm.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"fmt": "prettier --write './**/*.{js,jsx,ts,tsx,css,scss,md,json,yml}'",
+		"lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}' --fix --format verbose --project tsconfig.json"
+	},
+	"bugs": {
+		"url": "https://github.com/formcarry/formcarry-react/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/formcarry/formcarry-react.git"
+	},
+	"license": "MIT",
+	"keywords": [],
+	"author": "Teijal Inc.",
+	"dependencies": {
+		"react": "^16.10.2",
+		"react-dom": "^16.10.2"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"prettier": {
+		"trailingComma": "all",
+		"tabWidth": 2,
+		"semi": false,
+		"singleQuote": true,
+		"useTabs": true,
+		"arrowParens": "avoid"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn build && lint-staged"
+		}
+	},
+	"lint-staged": {
+		"src/**/*.{ts,tsx}": [
+			"tslint -c tslint.json --fix --format verbose --project tsconfig.json",
+			"prettier --write",
+			"git add"
+		],
+		"src/*.{ts,tsx}": [
+			"tslint -c tslint.json --fix --format verbose --project tsconfig.json",
+			"prettier --write",
+			"git add"
+		],
+		"*.{js,jsx,ts,tsx,css,scss,md,json,yml}": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"devDependencies": {
+		"@types/node": "^12.0.0",
+		"@types/react": "^16.9.0",
+		"@types/react-dom": "^16.9.0",
+		"husky": "^4.0.1",
+		"lint-staged": "^9.5.0",
+		"prettier": "^1.19.1",
+		"tslib": "^1.10.0",
+		"tslint": "^5.20.1",
+		"tslint-config-prettier": "^1.18.0",
+		"tslint-react": "^4.1.0",
+		"typescript": "^3.7.4"
+	},
+	"peerDependencies": {
+		"react": ">= 16.8.0",
+		"typescript": "^3.7.4"
+	}
+}
