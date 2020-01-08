@@ -41,19 +41,19 @@ function MyFormcarry() {
 
   return (
     <form onSubmit={submit}>
-			<label htmlFor="name">Name</label>
-			<input id="name" type="text" name="text" />
+		<label htmlFor="name">Name</label>
+		<input id="name" type="text" name="text" />
 
-			<label htmlFor="surname">Surname</label>
-			<input id="surname" type="text" name="surname" />
-			
-			<label htmlFor="email">Email</label>
-			<input id="email" type="email" name="email" />
-			
-			<label htmlFor="message">Message</label>
-			<textarea id="message" name="message" />
-			
-			<button type="submit">Send</button>
+		<label htmlFor="surname">Surname</label>
+		<input id="surname" type="text" name="surname" />
+		
+		<label htmlFor="email">Email</label>
+		<input id="email" type="email" name="email" />
+		
+		<label htmlFor="message">Message</label>
+		<textarea id="message" name="message" />
+		
+		<button type="submit">Send</button>
     </form>
   );
 }
@@ -77,19 +77,19 @@ function MyFormcarry() {
 
   return (
     <form onSubmit={formcarrySubmit}>
-			<label htmlFor="name">Name</label>
-			<input id="name" type="text" name="text" />
+		<label htmlFor="name">Name</label>
+		<input id="name" type="text" name="text" />
 
-			<label htmlFor="surname">Surname</label>
-			<input id="surname" type="text" name="surname" />
-			
-			<label htmlFor="email">Email</label>
-			<input id="email" type="email" name="email" />
-			
-			<label htmlFor="message">Message</label>
-			<textarea id="message" name="message" />
-			
-			<button type="submit">Send</button>
+		<label htmlFor="surname">Surname</label>
+		<input id="surname" type="text" name="surname" />
+		
+		<label htmlFor="email">Email</label>
+		<input id="email" type="email" name="email" />
+		
+		<label htmlFor="message">Message</label>
+		<textarea id="message" name="message" />
+		
+		<button type="submit">Send</button>
     </form>
   );
 }
