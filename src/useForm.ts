@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Props, FormcarryResponse } from './lib/types'
 import { errorHandler, noIdHandler } from './lib/handler'
 
-export function useForm(props: Props) {
+function useForm(props: Props) {
 	const { id, debug = true, extraData } = props
 	const [submitted, setSubmitted] = useState<boolean>(false)
 	const [submitting, setSubmitting] = useState<boolean>(false)
@@ -65,3 +65,5 @@ export function useForm(props: Props) {
 
 	return { state: { error, response, submitting, submitted }, submit }
 }
+
+export { useForm }
