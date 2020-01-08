@@ -60,7 +60,7 @@ function MyFormcarry() {
 ```
 You have to use a `<form>` element and pass `submit` as the `onSubmit` handler.
 
-### Desturucturing with different field name
+### Destructuring with different field name
 We return `state` and `submit` from `useForm` by default, but you can rename it to whatever you want, like this:
 
 ```jsx
