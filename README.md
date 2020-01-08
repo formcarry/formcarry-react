@@ -35,7 +35,7 @@ function MyFormcarry() {
   });
 
   // Success message
-  if (state.succeeded) {
+  if (state.submitted) {
     return <div>Thank you! We received your submission.</div>;
   }
 
