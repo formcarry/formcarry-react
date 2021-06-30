@@ -19,10 +19,6 @@
 	"license": "MIT",
 	"keywords": [],
 	"author": "Teijal Inc.",
-	"dependencies": {
-		"react": "^16.10.2",
-		"react-dom": "^16.10.2"
-	},
 	"eslintConfig": {
 		"extends": "react-app"
 	},
@@ -70,6 +66,7 @@
 	},
 	"peerDependencies": {
 		"react": ">= 16.8.0",
+		"react-dom": ">= 16.8.0",
 		"typescript": "^3.7.4"
 	}
 }
