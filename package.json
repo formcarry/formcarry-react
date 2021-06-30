@@ -1,6 +1,6 @@
 {
 	"name": "@formcarry/react",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "React Hooks library for Formcarry | formcarry.com",
 	"main": "./dist/useForm.js",
 	"types": "./dist/useForm.d.ts",

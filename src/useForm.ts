@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Props, FormcarryResponse } from './lib/types'
 import { errorHandler, noIdHandler } from './lib/handler'
 
@@ -6,7 +6,7 @@ function useForm(props: Props) {
 	const { id, debug = true, extraData } = props
 	const [submitted, setSubmitted] = useState<boolean>(false)
 	const [submitting, setSubmitting] = useState<boolean>(false)
-	const [error, setError] = useState()
+	const [error, setError] = useState(undefined)
 	const [response, setResponse] = useState<FormcarryResponse>()
 
 	useEffect(() => {
