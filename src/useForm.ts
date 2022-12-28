@@ -41,7 +41,7 @@ function useForm(props: Props) {
 
 		setSubmitting(true)
 
-		fetch(`https://formcarry.com/s/${id}`, {
+		return fetch(`https://formcarry.com/s/${id}`, {
 			method: 'POST',
 			headers: { Accept: 'application/json' },
 			body: data,
