@@ -5,7 +5,7 @@ declare function useForm(
 ): {
 	state: {
 		error: any
-		response: FormcarryResponse
+		response: FormcarryResponse | undefined
 		submitting: boolean
 		submitted: boolean
 	}
