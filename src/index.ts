@@ -6,7 +6,7 @@ function useForm(props: Props) {
 	const { id, debug = true, extraData } = props
 	const [submitted, setSubmitted] = useState<boolean>(false)
 	const [submitting, setSubmitting] = useState<boolean>(false)
-	const [error, setError] = useState(undefined)
+	const [error, setError] = useState<any>(undefined)
 	const [response, setResponse] = useState<FormcarryResponse>()
 
 	useEffect(() => {

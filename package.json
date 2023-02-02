@@ -1,11 +1,12 @@
 {
 	"name": "@formcarry/react",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "React Hooks library for Formcarry | formcarry.com",
-	"main": "./dist/useForm.js",
-	"types": "./dist/useForm.d.ts",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"module": "dist/react.esm.js",
 	"scripts": {
-		"build": "tsc",
+		"build": "tsdx build",
 		"fmt": "prettier --write './**/*.{js,jsx,ts,tsx,css,scss,md,json,yml}'",
 		"lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}' --fix --format verbose --project tsconfig.json"
 	},
@@ -62,11 +63,11 @@
 		"tslint": "^5.20.1",
 		"tslint-config-prettier": "^1.18.0",
 		"tslint-react": "^4.1.0",
-		"typescript": "^3.7.4"
+		"typescript": "^3.7.4",
+		"tsdx": "^0.14.1"
 	},
 	"peerDependencies": {
 		"react": ">= 16.8.0",
-		"react-dom": ">= 16.8.0",
-		"typescript": "^3.7.4"
+		"react-dom": ">= 16.8.0"
 	}
 }
